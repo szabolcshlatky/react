@@ -1,0 +1,30 @@
+{
+  "name": "legacy",
+  "description": "Meta Desc",
+  "keywords": [
+    "CRA",
+    "Strapi",
+    "GraphQL"
+  ],
+  "author": "Coding Sable",
+  "license": "ISC",
+  "private": true,
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "cra-strapi"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "echo": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"yarn --cwd cra start\" \"yarn --cwd strapi-graphql develop\""
+  },
+  "dependencies": {
+    "link": "^2.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
